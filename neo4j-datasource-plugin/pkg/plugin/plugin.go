@@ -42,7 +42,7 @@ type Neo4JDatasource struct {
 }
 
 // creates a new datasource instance.
-func NewNeo4JDatasource(settings backend.DataSourceInstanceSettings) (instancemgmt.Instance, error) {
+func NewNeo4JDatasource(ctx context.Context, settings backend.DataSourceInstanceSettings) (instancemgmt.Instance, error) {
 	id := uuid.New().String()
 	log.DefaultLogger.Debug("Create Datasource", DATASOURCE_UID, id)
 	neo4JSettings, err := unmarshalDataSourceSettings(settings)
