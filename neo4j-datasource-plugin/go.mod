@@ -94,3 +94,5 @@ require (
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/neo4j/neo4j-go-driver/v5 => github.com/shubhamranjan/neo4j-go-driver/v5 v5.0.0-20231116053110-9beba4b94032
